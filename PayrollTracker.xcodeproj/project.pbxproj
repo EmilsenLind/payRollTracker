@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ABA74ED1DC0D66B000405F0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABA74EC1DC0D66B000405F0 /* File.swift */; };
 		4ACFB2C21DBE03B4005CBD44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACFB2C11DBE03B4005CBD44 /* AppDelegate.swift */; };
 		4ACFB2C41DBE03B4005CBD44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACFB2C31DBE03B4005CBD44 /* ViewController.swift */; };
 		4ACFB2C71DBE03B4005CBD44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ACFB2C51DBE03B4005CBD44 /* Main.storyboard */; };
 		4ACFB2CA1DBE03B4005CBD44 /* PayrollTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4ACFB2C81DBE03B4005CBD44 /* PayrollTracker.xcdatamodeld */; };
 		4ACFB2CC1DBE03B4005CBD44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ACFB2CB1DBE03B4005CBD44 /* Assets.xcassets */; };
 		4ACFB2CF1DBE03B4005CBD44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ACFB2CD1DBE03B4005CBD44 /* LaunchScreen.storyboard */; };
+		4ACFB2D81DBE0640005CBD44 /* payrollDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACFB2D71DBE0640005CBD44 /* payrollDayTableViewCell.swift */; };
+		4ACFB2DA1DBE14EF005CBD44 /* payRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACFB2D91DBE14EF005CBD44 /* payRoll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4ABA74EC1DC0D66B000405F0 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		4ACFB2BE1DBE03B4005CBD44 /* PayrollTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayrollTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACFB2C11DBE03B4005CBD44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ACFB2C31DBE03B4005CBD44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		4ACFB2CB1DBE03B4005CBD44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ACFB2CE1DBE03B4005CBD44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ACFB2D01DBE03B4005CBD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ACFB2D71DBE0640005CBD44 /* payrollDayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = payrollDayTableViewCell.swift; sourceTree = "<group>"; };
+		4ACFB2D91DBE14EF005CBD44 /* payRoll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = payRoll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ABA74EB1DC0D65E000405F0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4ABA74EC1DC0D66B000405F0 /* File.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		4ACFB2B51DBE03B3005CBD44 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +70,8 @@
 		4ACFB2C01DBE03B4005CBD44 /* PayrollTracker */ = {
 			isa = PBXGroup;
 			children = (
+				4ABA74EB1DC0D65E000405F0 /* Util */,
+				4ACFB2D61DBE060D005CBD44 /* Class */,
 				4ACFB2C11DBE03B4005CBD44 /* AppDelegate.swift */,
 				4ACFB2C31DBE03B4005CBD44 /* ViewController.swift */,
 				4ACFB2C51DBE03B4005CBD44 /* Main.storyboard */,
@@ -65,6 +81,15 @@
 				4ACFB2C81DBE03B4005CBD44 /* PayrollTracker.xcdatamodeld */,
 			);
 			path = PayrollTracker;
+			sourceTree = "<group>";
+		};
+		4ACFB2D61DBE060D005CBD44 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				4ACFB2D71DBE0640005CBD44 /* payrollDayTableViewCell.swift */,
+				4ACFB2D91DBE14EF005CBD44 /* payRoll.swift */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACFB2D81DBE0640005CBD44 /* payrollDayTableViewCell.swift in Sources */,
+				4ABA74ED1DC0D66B000405F0 /* File.swift in Sources */,
 				4ACFB2C41DBE03B4005CBD44 /* ViewController.swift in Sources */,
+				4ACFB2DA1DBE14EF005CBD44 /* payRoll.swift in Sources */,
 				4ACFB2CA1DBE03B4005CBD44 /* PayrollTracker.xcdatamodeld in Sources */,
 				4ACFB2C21DBE03B4005CBD44 /* AppDelegate.swift in Sources */,
 			);
@@ -306,6 +334,7 @@
 				4ACFB2D51DBE03B4005CBD44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
